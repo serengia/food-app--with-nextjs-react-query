@@ -2,8 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import Meal from "../Meal";
 
-export default function HomePage({ data }) {
-  const meals = data?.data?.meals || [];
+export default function HomePage() {
   return (
     <section className="section section-main">
       <div className="foods-container row">
@@ -14,9 +13,7 @@ export default function HomePage({ data }) {
           </span>
         </div>
         <div className="cards">
-          {meals.map((m) => (
-            <Meal key={m.idMeal} meal={m} />
-          ))}
+          <p>Home page - coming up...</p>
         </div>
       </div>
     </section>
