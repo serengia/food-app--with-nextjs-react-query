@@ -1,23 +1,20 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Header() {
   return (
     <header>
-      <nav class="header-container row">
-        <div class="logo">
-          <a href="">Chickenry</a>
+      <nav className="header-container row">
+        <div className="logo">
+          <Link href="/">Chickenry</Link>
         </div>
 
         <ul>
           <li>
-            <button class="navigation-btn" id="home">
-              Home
-            </button>
+            <Link href={"/"}>Home</Link>
           </li>
           <li>
-            <button class="navigation-btn" id="contact">
-              Contact
-            </button>
+            <Link href={"/contact"}>Contact</Link>
           </li>
         </ul>
       </nav>

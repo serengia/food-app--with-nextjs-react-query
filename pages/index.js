@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
+import axios from "axios";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HomePage from "@/components/Pages/HomePage";
@@ -32,9 +33,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header />
-        <HomePage />
-        <Footer />
+        <HomePage data={data} />
       </main>
     </>
   );

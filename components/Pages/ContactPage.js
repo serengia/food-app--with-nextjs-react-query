@@ -2,13 +2,13 @@ import React from "react";
 
 export default function ContactPage() {
   return (
-    <section class="section section-contact">
-      <div class="contact-page row">
+    <section className="section section-contact">
+      <div className="contact-page row">
         <h1>Contact us</h1>
-        <p class="description">Meet the developers:</p>
-        <div class="developers-container">
-          <div class="developer">
-            <h3 class="name">👤 Henry Ikemefuna</h3>
+        <p className="description">Meet the developers:</p>
+        <div className="developers-container">
+          <div className="developer">
+            <h3 className="name">👤 Henry Ikemefuna</h3>
             <ul>
               <li>
                 GitHub:{" "}
@@ -33,8 +33,8 @@ export default function ContactPage() {
               </li>
             </ul>
           </div>
-          <div class="developer">
-            <h3 class="name">👤 James Serengia</h3>
+          <div className="developer">
+            <h3 className="name">👤 James Serengia</h3>
             <ul>
               <li>
                 GitHub:{" "}

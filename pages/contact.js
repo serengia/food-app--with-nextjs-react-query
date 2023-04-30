@@ -14,9 +14,7 @@ export default function contact() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header />
         <ContactPage />
-        <Footer />
       </main>
     </>
   );

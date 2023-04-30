@@ -1,16 +1,23 @@
+import { useQuery } from "@tanstack/react-query";
 import React from "react";
+import Meal from "../Meal";
 
-export default function HomePage() {
+export default function HomePage({ data }) {
+  const meals = data?.data?.meals || [];
   return (
-    <section class="section section-main">
-      <div class="foods-container row">
-        <div class="menu-heading">
+    <section className="section section-main">
+      <div className="foods-container row">
+        <div className="menu-heading">
           <h1>Welcome to Chickenry Restaurants</h1>
-          <span class="item-count-wrapper">
-            Available Meals(<span class="item-count"></span>)
+          <span className="item-count-wrapper">
+            Available Meals(<span className="item-count"></span>)
           </span>
         </div>
-        <div class="cards"></div>
+        <div className="cards">
+          {meals.map((m) => (
+            <Meal key={m.idMeal} meal={m} />
+          ))}
+        </div>
       </div>
     </section>
   );
