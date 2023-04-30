@@ -1,7 +1,7 @@
 import RootLayout from "@/components/RootLayout";
 import { store } from "@/redux/store";
 import "@/styles/globals.scss";
-import { QueryClient, QueryClientProvider } from "react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Provider } from "react-redux";
 
 export default function App({ Component, pageProps }) {

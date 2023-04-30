@@ -3,10 +3,26 @@ import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HomePage from "@/components/Pages/HomePage";
+import { useQuery } from "@tanstack/react-query";
+
+import MEALS_API_URL from "../globals.js";
+
+const url = `${MEALS_API_URL}/filter.php?c=Chicken`;
 
 const inter = Inter({ subsets: ["latin"] });
 
+const getFoods = () => {
+  return axios.get(url);
+};
+
 export default function Home() {
+  const { data, isLoading, isError, error } = useQuery({
+    queryKey: ["foods"],
+    queryFn: getFoods,
+  });
+
+  console.log("FETCHED DATA: ", data);
+
   return (
     <>
       <Head>
