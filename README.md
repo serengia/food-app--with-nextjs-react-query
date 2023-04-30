@@ -19,8 +19,7 @@ npm install
 
 ## Live Demo
 
-Coming soon...
-[Live Demo Link]()
+[Live Demo Link](https://serecode-food-app.vercel.app/)
 
 ## Authors
 
